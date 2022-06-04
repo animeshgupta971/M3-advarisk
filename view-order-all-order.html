@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>View Order</title>
+    <style>
+        .badges-card-2 {
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d-flex">
+        <div class="card shadow-sm side-bar" id="sidebar">
+            <div class="sidebar-content menu">
+                <img src="./logo.png" class="sidebar-logo">
+                <div class="item">
+                    <a href="#"><img src="./key-square.png" alt=""> Dashboard</a>
+                </div>
+
+                <div class="item">
+                    <a class="sub-btn"><img src="./fi_users.png" alt="">Create Order
+                        <i class="fa-solid fa-angle-right dropdown"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <div class="sub-item">
+                            <a href="#"><img src="./u_plus.png" alt="">Order</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <a class="sub-btn"><img src="./fi_users.png" alt="">View Order
+                        <i class="fa-solid fa-angle-right dropdown"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <div class="sub-item">
+                            <a href="#"><img src="./u_plus.png" alt="">View Order</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <a class="sub-btn"><img src="./fi_user.png" alt=""> My Profile
+                        <i class="fa-solid fa-angle-right dropdown"></i></a>
+                    <div class="sub-menu">
+                        <div class="sub-item">
+                            <a href="#"><img src="./fi_user.png" alt=""> Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="./fi_log-out.png" alt=""> Logout</a>
+                </div>
+            </div>
+        </div>
+        <div class="flex-grow-1 position-relative">
+            <div class="header bg-white shadow-sm">
+                <div class="d-flex align-items-center gap-5">
+                    <div id="toggle_btn"><img src="./hamburger.png" alt=""></div>
+                    <!-- <div class="expand"><img src="./Vector.png" alt=""></div> -->
+                </div>
+                <div class="nav-btns-area">
+                    <span><a href="#" class="nav-btn btn btn-primary m-btn">Create New User</a></span>
+                    <span><a href="#" class="nav-btn btn btn-primary  m-btn">Create New Account</a></span>
+                </div>
+            </div>
+            <div class="container-fluid mb-4 mt-4">
+                <div class="row">
+                    <div class="badges-card-2">
+                        <div class="card shadow-sm px-3 py-2">
+                            <div class="d-flex gap-3 align-items-center justify-content-center">
+                                <img src="./date-icon.png" alt="">
+                                <div><strong>Assigned Date:</strong> 05/03/2022</div> 
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="badges-card-2">
+                        <div class="card shadow-sm px-3 py-2">
+                            <div class="d-flex gap-3 align-items-center justify-content-center">
+                                <img src="./date-icon.png" alt="">
+                                <div><strong>Report Submission Date:</strong> 05/03/2022</div> 
+                            </div>
+
+                        </div>
+                    </div>
+                                </div>
+            </div>
+            <div class="container-fluid mb-4 mt-4">
+                <div class="row">
+                    <div class="badges-card">
+                        <div class="card shadow-sm">
+                            <div class="d-flex gap-3 p-2">
+                                <img src="./doller.png" alt="" style="min-width:93px;">
+                                <div class="d-flex gap-3 align-items-center">
+                                    <h5>Total Orders</h5>
+                                    <h4>200</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="badges-card">
+                        <div class="card shadow-sm">
+                            <div class="d-flex gap-3 p-2">
+                                <img src="./doller.png" alt="" style="min-width:93px;">
+                                <div class="d-flex gap-3 align-items-center">
+                                    <h5>Completed</h5>
+                                    <h4>200</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="badges-card">
+                        <div class="card shadow-sm">
+                            <div class="d-flex gap-3 p-2">
+                                <img src="./doller.png" alt="" style="min-width:93px;">
+                                <div class="d-flex gap-3 align-items-center">
+                                    <h5>Outgoing</h5>
+                                    <h4>200</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+            <div class="container-fluid mb-4">
+                <div class="px-3 card shadow-sm rounded">
+                    <div class="d-flex align-items-center justify-content-between">
+                    <h5 class="heading-dashobord p-2">Review Orders :</h5>
+                    
+                            <div class="search d-flex align-items-center position-relative">
+                              <img src="./search.png" alt="" style="position: absolute;left: 5px;">
+                              <input type="text" class="form-control " placeholder="Search Id"style="padding-left: 35px;">
+                              
+                            </div>
+                        </div>
+                    <table class="table dashbord-1">
+                        <thead>
+                            <tr>
+                                <th scope="col">Order No.</th>
+                                <th scope="col">Loan Id</th>
+                                <th scope="col">Borrower Name</th>
+                                <th scope="col">Branch</th>
+                                <th scope="col">Order Status</th>
+                                <th scope="col">State</th>
+                                <th scope="col">Loan Amount</th>
+                                <th scope="col">Case Type</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Order 1</td>
+                                <td>#223344</td>
+                                <td>Union Bank of India</td>
+                                <td>Pune</td>
+                                <td>Assigned</td>
+                                <td>Uttar Pradesh</td>
+                                <td>$45.99</td>
+                                <td>Assets Tracing</td>
+
+                            </tr>
+                            <tr>
+                                <td>Order 1</td>
+                                <td>#223344</td>
+                                <td>Union Bank of India</td>
+                                <td>Pune</td>
+                                <td>Assigned</td>
+                                <td>Uttar Pradesh</td>
+                                <td>$45.99</td>
+                                <td>Assets Tracing</td>
+
+                            </tr>
+                            <tr>
+                                <td>Order 1</td>
+                                <td>#223344</td>
+                                <td>Union Bank of India</td>
+                                <td>Pune</td>
+                                <td>Assigned</td>
+                                <td>Uttar Pradesh</td>
+                                <td>$45.99</td>
+                                <td>Assets Tracing</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+
+    <script>
+        var el = document.getElementById("sidebar")
+        var toggleButtun = document.getElementById("toggle_btn")
+        toggleButtun.onclick = function () {
+            el.classList.toggle('d-none')
+        }
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.formFile').change(function () {
+                if ($(".formFile").files.length == 0) {
+
+                    $(this).siblings().text("Upload");
+                }
+                else {
+                    $(this).siblings().text("Uploaded");
+                }
+            })
+            $('.sub-btn').click(function () {
+                $(this).next('.sub-menu').slideToggle();
+                $(this).find('.dropdown').toggleClass('rotate');
+            });
+            $(".m_modal_toggle").click(function () {
+                $("#popup_container").show();
+            });
+            $("#close_btn,.modaloverlay").click(function () {
+                $(".m_popup").hide();
+                $('body').css('overflow', 'unset');
+                $(".tab_navigation li:first").trigger("click");
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Dashbord</title>
+</head>
+
+<body>
+    <div class="d-flex">
+        <div class="card shadow-sm side-bar" id="sidebar">
+            <div class="sidebar-content menu">
+                <img src="./images/logo.png" class="sidebar-logo">
+                <div class="item">
+                    <a href="#"><img src="./images/key-square.png" alt=""> Dashboard</a>
+                </div>
+
+                <div class="item">
+                    <a class="sub-btn"><img src="./images/fi_users.png" alt="">Create Order
+                        <i class="fa-solid fa-angle-right dropdown"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <div class="sub-item">
+                            <a href="#"><img src="./images/u_plus.png" alt="">Order</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <a class="sub-btn"><img src="./images/fi_users.png" alt="">View Order
+                        <i class="fa-solid fa-angle-right dropdown"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <div class="sub-item">
+                            <a href="#"><img src="./images/u_plus.png" alt="">View Order</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <a class="sub-btn"><img src="./images/fi_user.png" alt=""> My Profile
+                        <i class="fa-solid fa-angle-right dropdown"></i></a>
+                    <div class="sub-menu">
+                        <div class="sub-item">
+                            <a href="#"><img src="./images/fi_user.png" alt=""> Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="./images/fi_log-out.png" alt=""> Logout</a>
+                </div>
+            </div>
+        </div>
+        <div class="flex-grow-1 position-relative">
+            <div class="header bg-white shadow-sm">
+                <div class="d-flex align-items-center gap-5">
+                    <div id="toggle_btn"><img src="./images/hamburger.png" alt=""></div>
+                    <!-- <div class="expand"><img src="./images/Vector.png" alt=""></div> -->
+                </div>
+                <div class="nav-btns-area">
+                    <span><a href="#" class="nav-btn btn btn-primary m-btn">Create New User</a></span>
+                    <span><a href="#" class="nav-btn btn btn-primary  m-btn">Create New Account</a></span>
+                </div>
+            </div>
+            <div class="container-fluid mb-4 mt-4">
+                <div class="row">
+                    <div class="badges-card">
+                        <div class="card shadow-sm">
+                            <div class="d-flex gap-3 p-2">
+                                <img src="./images/doller.png" alt="" style="min-width:93px;">
+                                <div>
+                                    <h5>Total Number of Accounts (Clients)</h5>
+                                    <h4>200</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="badges-card">
+                        <div class="card shadow-sm">
+                            <div class="d-flex gap-3 p-2">
+                                <img src="./images/doller.png" alt="" style="min-width:93px;">
+                                <div>
+                                    <h5>Total Number of Accounts (Clients)</h5>
+                                    <h4>200</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+            <div class="container-fluid mb-4">
+                <div class="px-3 card shadow-sm rounded">
+                    <div class="d-flex align-items-center justify-content-between">
+                    <h5 class="heading-dashobord p-2">Review Orders :</h5>
+                    
+                            <div class="search d-flex align-items-center position-relative">
+                              <img src="./search.png" alt="" style="position: absolute;left: 5px;">
+                              <input type="text" class="form-control " placeholder="Search Id"style="padding-left: 35px;">
+                              
+                            </div>
+                        </div>
+                    <table class="table dashbord-1">
+                        <thead>
+                            <tr>
+                                <th scope="col">Order No.</th>
+                                <th scope="col">Loan Id</th>
+                                <th scope="col">Borrower Name</th>
+                                <th scope="col">Order Status</th>     
+                                <th scope="col">Loan Amount</th>                                
+                                <th scope="col">Uploaded Reports</th>
+                                <th scope="col">Uploaded Documents</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Order 1</td>
+                                <td>#223344</td>
+                                <td>Union Bank of India</td>                                
+                                <td>Assigned</td>
+                                <td>$45.99</td>
+                                <td>Uttar Pradesh</td>                                
+                                <td>Assets Tracing</td>
+                            </tr>
+                            <tr>
+                                <td>Order 1</td>
+                                <td>#223344</td>
+                                <td>Union Bank of India</td>                                
+                                <td>Assigned</td>
+                                <td>$45.99</td>
+                                <td>Uttar Pradesh</td>                                
+                                <td>Assets Tracing</td>
+                            </tr>
+                            <tr>
+                                <td>Order 1</td>
+                                <td>#223344</td>
+                                <td>Union Bank of India</td>                                
+                                <td>Assigned</td>
+                                <td>$45.99</td>
+                                <td>Uttar Pradesh</td>                                
+                                <td>Assets Tracing</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- <div class="text-center my-3">
+        <span class="modal-toggle m_modal_toggle btn nav-btn" id="show_popup">Click Me</span>
+    </div> -->
+    <div class="modalChart m_popup" id="popup_container">
+        <div class="modaloverlay"></div>
+        <div id="popup-container-child" class="m_popup_container_child">
+            <div id="close_btn">
+                <span>&times;</span>
+            </div>
+            <div>
+                <div class="text-center">
+                    <img src="./images/check.png" alt="">
+                    <h2 class="mt-4">Account Created Successfully</h2>
+                    <p class="h5 text-secondary py-3">Please share below details with the client</p>
+                </div>
+                <table class="table table-bordered">
+
+                    <tbody>
+                        <tr>
+                            <th> URL:</th>
+                            <td>animesh@gmail.com</td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">User Name:</th>
+                            <td>animesh@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Password:</th>
+                            <td>BVCNCXHHJJ</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="text-center"><button class="btn btn-primary nav-btn">Copy</button></div>
+            </div>
+        </div>
+    </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <!-- <script>
+        var formFileLabel = $(".formFileLabel");
+        function IsInputFileEmpty() {
+            if ($(".formFile")[0].files.length != 0) {
+                formFileLabel.text("Uploaded");
+            }
+        }
+    </script> -->
+
+    <script>
+        var el = document.getElementById("sidebar")
+        var toggleButtun = document.getElementById("toggle_btn")
+        toggleButtun.onclick = function () {
+            el.classList.toggle('d-none')
+        }
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.formFile').change(function () {
+                if ($(".formFile").files.length == 0) {
+
+                    $(this).siblings().text("Upload");
+                }
+                else {
+                    $(this).siblings().text("Uploaded");
+                }
+            })
+            $('.sub-btn').click(function () {
+                $(this).next('.sub-menu').slideToggle();
+                $(this).find('.dropdown').toggleClass('rotate');
+            });
+            $(".m_modal_toggle").click(function () {
+                $("#popup_container").show();
+            });
+            $("#close_btn,.modaloverlay").click(function () {
+                $(".m_popup").hide();
+                $('body').css('overflow', 'unset');
+                $(".tab_navigation li:first").trigger("click");
+            });
+        });
+    </script>
+
+</body>
+
+</html>
